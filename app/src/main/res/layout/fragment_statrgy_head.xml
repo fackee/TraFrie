@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    tools:context="com.example.xiaozhu.View.Fragments.StatrgyHeadFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/tx"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginTop="140dp"
+    android:textColor="#ffffff"
+    android:background="#33000000"
+    android:text="好山，好水，好风光！"
+    android:gravity="left|center_vertical"
+    android:textSize="16sp"
+    android:paddingLeft="20dp"/>
+</FrameLayout>

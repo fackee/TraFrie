@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xiaozhu.View.Activities.WriteReplyActivity">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/wr_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#22000000">
+</android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/wr_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="写评论"
+            android:gravity="left|top"/>
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

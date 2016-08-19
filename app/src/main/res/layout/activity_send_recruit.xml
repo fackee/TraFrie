@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.xiaozhu.View.Activities.SendRecruitActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/sr_head"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#22000000"
+        android:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+        app:menu="@menu/tool_menu">
+    </android.support.v7.widget.Toolbar>
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/sr_tt"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_below="@+id/sr_head">
+    <EditText
+        android:id="@+id/send_rec_title"
+        android:hint="标题"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/sr_tt">
+        <EditText
+            android:id="@+id/send_rec_content"
+            android:hint="内容"
+            android:gravity="top"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.design.widget.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_above="@+id/sr_foot"
+        android:background="@color/background_floating_material_dark" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/sr_foot"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:text="起始时间"
+                android:textColor="@android:color/tab_indicator_text"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:text="截至时间"
+                android:textSize="15sp"
+                android:textColor="@android:color/tertiary_text_dark" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:elevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+<ImageView
+    android:id="@+id/topic_bg"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/xm"/>
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <TextView
+         android:id="@+id/topic_title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="寻找中国最美山水"
+         android:textSize="25sp"
+         android:textColor="#ffffff"
+         android:textStyle="bold"
+         android:layout_marginLeft="35dp"
+         android:layout_marginTop="100dp"/>
+     <TextView
+         android:id="@+id/view_num"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+         android:textSize="18sp"
+         android:text="14231414 次浏览"
+         android:layout_below="@+id/topic_title"
+         android:layout_marginLeft="35dp"
+         android:layout_marginTop="5dp"/>
+     <View
+         android:id="@+id/point"
+         android:layout_width="5dp"
+         android:layout_height="5dp"
+         android:background="#ffffff"
+         android:layout_alignTop="@+id/view_num"
+         android:layout_toRightOf="@+id/view_num"
+         android:layout_marginTop="7dp"
+         android:layout_marginLeft="10dp"/>
+     <TextView
+         android:id="@+id/concern"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+         android:textSize="18sp"
+         android:text="14234 人关注"
+         android:layout_alignTop="@+id/view_num"
+         android:layout_toRightOf="@+id/point"
+         android:layout_marginLeft="10dp"/>
+ </RelativeLayout>
+</android.support.v7.widget.CardView>

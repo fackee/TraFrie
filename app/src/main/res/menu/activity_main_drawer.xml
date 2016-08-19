@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/left_footprint_26px"
+            android:title="我的足迹" />
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/bookmark_24px"
+            android:title="我的收藏" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/user_24px"
+            android:title="我的信息" />
+    </group>
+
+    <item android:title="帮助我们">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share_24px"
+                android:title="分享应用" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/edit_26px"
+                android:title="意见反馈" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.xiaozhu.View.Activities.ArticalActivity">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="215dp">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/actical_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#11000000">
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:id="@+id/artical_bg"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@mipmap/tx"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:orientation="vertical"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:maxLines="1"
+        android:text="寻找中国最美山水"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="left"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.example.xiaozhu.View.CustomView.CircleImageView
+                    android:id="@+id/artical_tx"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/tx"/>
+                <TextView
+                    android:id="@+id/artical_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="肤白貌美"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/artical_tx"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="伪文青，嘻嘻嘻."
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/artical_tx"
+                    android:layout_below="@+id/artical_name"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="这个题目放在草稿箱里面许久了，一直没有动力提笔。趁现在公司人还没有来齐，工作量还不是很大，就挤出来时间来把它完善了。
+
+我们知道，RecyclerView是经典的ListView的进化与升华，它比ListView更加灵活，但也因此引入了一定的复杂性。最新的v7支持包新添加了RecyclerView。
+
+我们知道，ListView通过使用ViewHolder来提升性能。ViewHolder通过保存item中使用到的控件的引用来减少findViewById的调用，以此使ListView滑动得更加顺畅。但这种模式即使不使用也无妨。
+
+对于还不是很熟悉RecyclerView的程序员，可以先从这两篇文章里面了解一下它的基本用法：
+
+Android L新控件RecyclerView简介
+
+RecyclerView和CardView简介
+
+这里对RecyclerView的基本使用方式，就不再赘述，只讨论RecyclerView中的ViewHolder的缓存机制。其实它的缓存机制大致原理跟ListView是相似的，只是在具体的实现细节上面有些差异。对于这些RecyclerView的缓存机制， Android L新控件RecyclerView简介 这篇文章的结尾进行了总结性的概括，这里讨论的内容要远比这篇简介的内容要复杂和多。
+
+首先，我定义了三个不同的Adapter，里面分别对应了三种情况：item类型只有一种；item类型有两种；item类型有三种。里面均重写了onCreateViewHolder方法，用于记录生成的ViewHolder或者View的数目。内容可以从Log里面查询得到。三个Adapter的细节分别是："
+            android:gravity="left"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
